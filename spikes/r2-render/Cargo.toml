@@ -1,0 +1,13 @@
+[package]
+name = "r2-render"
+version = "0.1.0"
+edition = "2021"
+
+# Standalone spike: do NOT get absorbed into /home/nezerkill/shell's workspace.
+[workspace]
+
+[dependencies]
+wgpu = "30"
+pollster = "0.4"
+bytemuck = { version = "1", features = ["derive"] }
+png = "0.18"

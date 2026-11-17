@@ -1,0 +1,11 @@
+[package]
+name = "r6-binds"
+version = "0.0.1"
+edition = "2024"
+publish = false
+
+[dependencies]
+
+# Standalone spike: keep it out of the /home/nezerkill/shell workspace, always
+# build with `cargo --manifest-path spikes/r6-binds/Cargo.toml`.
+[workspace]

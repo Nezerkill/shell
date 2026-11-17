@@ -1,0 +1,12 @@
+{
+  "binds": {
+    "quit-one": {
+      "keys": "SUPER+SHIFT+Q",
+      "do": { "type": "niri", "action": "close-window" }
+    },
+    "quit-two": {
+      "keys": "SHIFT+SUPER+Q",
+      "do": { "type": "niri", "action": "close-window" }
+    }
+  }
+}

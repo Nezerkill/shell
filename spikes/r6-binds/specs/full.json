@@ -1,0 +1,54 @@
+{
+  "hotkey_overlay": { "skip_at_startup": true },
+  "binds": {
+    "terminal": {
+      "keys": "SUPER+Return",
+      "do": { "type": "spawn", "command": ["foot"] },
+      "overlay_title": "Терминал"
+    },
+    "launcher": {
+      "keys": "SUPER+D",
+      "do": { "type": "ipc", "call": "launcher.toggle" }
+    },
+    "locker": {
+      "keys": "SUPER+Escape",
+      "do": { "type": "spawn", "command": ["swaylock"] },
+      "allow_when_locked": true,
+      "repeat": false
+    },
+    "mute-mic": {
+      "keys": "XF86AudioMicMute",
+      "do": { "type": "spawn-sh", "command": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle" },
+      "allow_when_locked": true,
+      "overlay_title": null
+    },
+    "workspace-2": {
+      "keys": "SUPER+2",
+      "do": { "type": "niri", "action": "focus-workspace", "args": ["2"] }
+    },
+    "column-wider": {
+      "keys": "SUPER+Plus",
+      "do": { "type": "niri", "action": "set-column-width", "args": ["+10%"] }
+    },
+    "monitor-hdmi": {
+      "keys": "SUPER+F1",
+      "do": { "type": "niri", "action": "focus-monitor", "args": ["HDMI-A-1"] }
+    },
+    "overview": {
+      "keys": "SUPER+O",
+      "do": { "type": "niri", "action": "toggle-overview" },
+      "repeat": false,
+      "overlay_title": "Обзор"
+    },
+    "workspace-next": {
+      "keys": "SUPER+WheelScrollDown",
+      "do": { "type": "niri", "action": "focus-workspace-down" },
+      "cooldown_ms": 150
+    },
+    "hotkey-hint": {
+      "keys": "SUPER+Shift+Slash",
+      "do": { "type": "niri", "action": "show-hotkey-overlay" },
+      "overlay_title": null
+    }
+  }
+}

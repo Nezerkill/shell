@@ -1,0 +1,2 @@
+# private PAM stack for the lock-screen spike (permit variant)
+auth required pam_permit.so

@@ -1,0 +1,17 @@
+[package]
+name = "r5-probe-crate"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Standalone spike: do NOT get absorbed into /home/nezerkill/shell's workspace.
+[workspace]
+
+[features]
+# The whole point of probe A: the protocol lives behind `staging`.
+default = ["staging"]
+staging = ["wayland-protocols/staging"]
+
+[dependencies]
+wayland-client = "0.31"
+wayland-protocols = { version = "0.32", features = ["client"] }

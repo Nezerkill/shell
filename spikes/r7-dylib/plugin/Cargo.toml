@@ -1,0 +1,16 @@
+[package]
+name = "r7-plugin"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+# Standalone on purpose: keeps this crate out of the shell workspace.
+[workspace]
+
+[lib]
+name = "r7_plugin"
+crate-type = ["cdylib"]
+
+[dependencies]
+abi_stable = "0.11"
+r7-plugin-api = { path = "../api" }

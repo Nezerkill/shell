@@ -1,0 +1,8 @@
+{
+  "binds": {
+    "typo": {
+      "keys": "SUPER+Return",
+      "do": { "type": "niri", "action": "spawns", "args": ["foot"] }
+    }
+  }
+}

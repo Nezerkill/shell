@@ -1,0 +1,4 @@
+target/
+# run.sh writes measured PNGs and the last stdout here; they are regenerated
+# by ./run.sh, so they are not tracked.
+out/

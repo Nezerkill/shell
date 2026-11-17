@@ -1,0 +1,8 @@
+{
+  "binds": {
+    "terminal": {
+      "keys": "SUPER+Return",
+      "do": { "type": "spawn", "command": ["foot"] }
+    }
+  }
+}

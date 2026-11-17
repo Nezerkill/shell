@@ -1,0 +1,10 @@
+[package]
+name = "r3-pam"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+# Standalone spike: do NOT get absorbed into /home/nezerkill/shell's workspace.
+[workspace]
+
+[dependencies]

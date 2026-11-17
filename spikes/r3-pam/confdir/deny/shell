@@ -1,0 +1,2 @@
+# private PAM stack for the lock-screen spike (deny variant)
+auth required pam_deny.so

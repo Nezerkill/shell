@@ -1,0 +1,18 @@
+[package]
+name = "r1-esl"
+version = "0.1.0"
+edition = "2021"
+description = "R1 spike: ext-session-lock-v1 client written directly against wayland-client"
+
+# Standalone spike: do NOT get absorbed into /home/nezerkill/shell's workspace.
+[workspace]
+
+[dependencies]
+wayland-client = "0.31"
+# needed by the code wayland_scanner::generate_interfaces! emits
+wayland-backend = "0.3"
+# protocol code is generated at compile time from protocols/*.xml (proc macro)
+wayland-scanner = "0.31"
+libc = "0.2"
+png = "0.17"
+font8x8 = "0.3"

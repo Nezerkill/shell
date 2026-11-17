@@ -1,0 +1,7 @@
+// Negative fixture, NOT generated: two identical keybinds.
+// `niri validate` must reject it — this is the control that proves our
+// validation call actually reads the file instead of always returning 0.
+binds {
+    Mod+Return { spawn "foot"; }
+    Mod+Return { spawn "fuzzel"; }
+}

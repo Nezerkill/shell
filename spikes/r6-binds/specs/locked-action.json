@@ -1,0 +1,9 @@
+{
+  "binds": {
+    "overview": {
+      "keys": "SUPER+O",
+      "do": { "type": "niri", "action": "toggle-overview" },
+      "allow_when_locked": true
+    }
+  }
+}

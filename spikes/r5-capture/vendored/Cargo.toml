@@ -1,0 +1,19 @@
+[package]
+name = "r5-vendored"
+version = "0.1.0"
+edition = "2021"
+publish = false
+build = "build.rs"
+
+# Standalone spike: do NOT get absorbed into /home/nezerkill/shell's workspace.
+[workspace]
+
+[dependencies]
+wayland-client = "0.31"
+# Both are required by the *generated* code, not by our own source: the scanner
+# emits `bitflags!` for bitfield enums and `wayland_backend::protocol` paths.
+wayland-backend = "0.3"
+bitflags = "2"
+# Pure-Rust codegen (same generator the wayland-protocols crate uses internally),
+# fed with the XML files vendored in ./protocols.
+wayland-scanner = "0.31"
