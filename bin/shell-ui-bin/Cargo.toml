@@ -1,0 +1,16 @@
+[package]
+name = "shell-ui-bin"
+description = "Процесс UI: layer-shell поверхности и рендер"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "shell-ui"
+path = "src/main.rs"
+
+[dependencies]
+
+[lints]
+workspace = true

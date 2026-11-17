@@ -1,0 +1,12 @@
+[package]
+name = "shell-ui"
+description = "Scene graph, layout, виджеты, wgpu-рендер, layer-shell"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+
+[lints]
+workspace = true

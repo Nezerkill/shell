@@ -1,0 +1,16 @@
+[package]
+name = "shell-lock"
+description = "Лок-скрин: ext-session-lock, PAM, без плагинов"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "shell-lock"
+path = "src/main.rs"
+
+[dependencies]
+
+[lints]
+workspace = true

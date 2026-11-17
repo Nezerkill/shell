@@ -1,0 +1,4 @@
+# Used only by rustup-based setups; under `nix develop` the toolchain comes from nixpkgs.
+[toolchain]
+channel = "stable"
+components = ["rustfmt", "clippy", "rust-src"]

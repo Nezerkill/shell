@@ -1,0 +1,31 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "bin/*"]
+
+[workspace.package]
+version = "0.0.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/nezerkill/shell"
+rust-version = "1.85"
+
+[workspace.dependencies]
+# --- wire / config (added as crates start using them) ---
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+postcard = { version = "1", default-features = false, features = ["alloc"] }
+thiserror = "2"
+# --- heavy: uncomment per crate when its spike lands (see docs/architecture) ---
+# tokio, zbus, calloop, wayland-client, smithay-client-toolkit, wayland-protocols,
+# wgpu, lyon, cosmic-text, glyphon, abi_stable, image, quantette, material-colors,
+# wl-clipboard-rs, pam-client, libpulse-binding, tracing
+
+[workspace.lints.rust]
+unsafe_code = "warn"
+unused_crate_dependencies = "warn"
+
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+module_name_repetitions = "allow"
+must_use_candidate = "allow"
+missing_errors_doc = "allow"

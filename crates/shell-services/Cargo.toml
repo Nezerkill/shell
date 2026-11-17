@@ -1,0 +1,12 @@
+[package]
+name = "shell-services"
+description = "Сервисы ОС: нотификации, трей, аудио, сеть, BT, питание, лок"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+
+[lints]
+workspace = true

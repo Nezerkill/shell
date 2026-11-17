@@ -1,0 +1,16 @@
+[package]
+name = "shellctl"
+description = "CLI-клиент к сокету шелла"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "shellctl"
+path = "src/main.rs"
+
+[dependencies]
+
+[lints]
+workspace = true
