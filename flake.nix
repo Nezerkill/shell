@@ -30,7 +30,7 @@
             pipewire
             libpulseaudio
             sqlite
-            nodePackages.nixpkgs-fmt
+            nixfmt
           ];
           RUST_BACKTRACE = "1";
         };

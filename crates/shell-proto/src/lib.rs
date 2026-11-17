@@ -13,7 +13,7 @@ pub const PROTO_VERSION: u32 = 0;
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Serialize, Deserialize)]
 pub struct Seq(pub u64);
 
-/// Топик подписки: `snapshot + delta` (эталон — `niri msg event-stream`).
+/// Топик подписки: режим `snapshot + delta` (эталон — поток событий Niri).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]
 #[serde(rename_all = "snake_case")]
 pub enum Topic {

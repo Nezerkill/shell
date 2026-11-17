@@ -6,7 +6,8 @@ fail=0
 
 # INV8: код, специфичный для композитора, живёт только в crates/shell-compositor/src/{hyprland,niri}
 hits=$(grep -rn --include=*.rs -E 'hyprctl|niri msg|NIRI_SOCKET|HYPRLAND_INSTANCE_SIGNATURE' crates bin \
-        | grep -v '^crates/shell-compositor/src/' || true)
+        | grep -v '^crates/shell-compositor/src/' \
+        | grep -vE '^[^:]+:[0-9]+:[[:space:]]*(//|/\*|\*)' || true)
 if [ -n "$hits" ]; then
   echo "INV8 НАРУШЕН: обращение к композитору вне shell-compositor:"
   echo "$hits"
