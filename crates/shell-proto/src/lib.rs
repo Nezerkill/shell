@@ -75,7 +75,12 @@ impl RpcRequest {
     /// Создать запрос.
     #[must_use]
     pub fn new(id: u64, method: impl Into<String>, params: serde_json::Value) -> Self {
-        Self { jsonrpc: "2.0".to_owned(), id, method: method.into(), params }
+        Self {
+            jsonrpc: "2.0".to_owned(),
+            id,
+            method: method.into(),
+            params,
+        }
     }
 }
 
